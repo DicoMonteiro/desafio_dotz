@@ -1,0 +1,10 @@
+default: -p dev -p reports
+
+
+# Reports
+reports: --format pretty --format AllureCucumber::CucumberFormatter --out allure-results
+
+### Ambientes ###
+dev: AMBIENTE=dev
+hmp: AMBIENTE=hmp
+prd: AMBIENTE=prd
