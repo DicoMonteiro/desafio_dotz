@@ -4,7 +4,6 @@ module Swapi
 
     headers "Content-Type" => "application/json; charset=UTF-8"
 
-    # base_uri URL[AMBIENTE]["gateway-selo"] + ENDPOINT["selo"]
     base_uri URL[AMBIENTE]["swapi"]
 
     def consult_swapi(attr)

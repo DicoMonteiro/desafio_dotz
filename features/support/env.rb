@@ -19,11 +19,11 @@ AllureCucumber.configure do |c|
   c.clean_results_directory = true
   c.logging_level = Logger::INFO
   c.link_tms_pattern = "http://www.hiptest.com/browse/{}"
-  c.link_issue_pattern = "http://www.dev.azure.com/browse/{}"
+  c.link_issue_pattern = "http://www.jenkins.com/browse/{}"
 end
 
 AllureCucumber.configure do |c|
   c.tms_prefix = "HIPTEST--"
-  c.issue_prefix = "AZURE.DEVOPS++"
+  c.issue_prefix = "JENKINS"
   c.severity_prefix = "SEVERITY:"
 end
